@@ -53,7 +53,7 @@ export default function App() {
           }}
           value={task}
           style={styles.input}
-          placeholder={"Metin Gir"}
+          placeholder={"Input Text"}
         ></TextInput>
         <TouchableOpacity onPress={() => hanleAddTask()}>
           <View style={styles.addWrapper}>
@@ -61,6 +61,10 @@ export default function App() {
           </View>
         </TouchableOpacity>
       </KeyboardAvoidingView>
+
+      <View>
+        <Text style={styles.deneme1}>Local Hour</Text>
+      </View>
     </SafeAreaView>
   );
 }
@@ -109,4 +113,12 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   addText: {},
+  deneme1: {
+    fontWeight: "bold",
+    fontSize: 16,
+    marginTop: 20,
+    position: "absolute",
+    right: 40,
+    fontStyle: "italic",
+  },
 });
